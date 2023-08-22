@@ -50,7 +50,7 @@ def check_add1():
     
     test_input = "1 + 2"
     
-    expected = check50.run(f"python {solution}").stdin(test_input).stdout()
+    expected = check50.run(f"python ./{solution}").stdin(test_input).stdout()
     actual   = check50.run(f"python {submission}").stdin(test_input).stdout()
     
     if expected != actual:
