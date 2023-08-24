@@ -16,4 +16,4 @@ def compiles():
 @check50.check(compiles)
 def hello_world():
     """Is the output correct?"""
-    check50.run("python3 hello_world.py").stdout("Hello, world!", regex=False).exit(0)
+    check50.run("python3 hello_world.py").stdout("Hello, World!", regex=False).exit(0)
