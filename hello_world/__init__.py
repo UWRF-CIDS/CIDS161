@@ -12,7 +12,7 @@ def compiles():
     """Does your .py file compile?"""
     check50.py.compile(submission)
 
-@check50.check()
+@check50.check(compiles)
 def hello_world():
     """Is the output correct?"""
     check50.run("python3 hello_world.py").stdout("Hello, world!", regex=False).exit(0)
