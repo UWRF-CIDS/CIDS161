@@ -1,6 +1,18 @@
 import check50
 
+submission = "hello_world.py"
+
+@check50.check()
+def exists():
+    """Does your .py file exist?"""
+    check50.exists(submission)
+
+@check50.check(exists)
+def compiles():
+    """Does your .py file compile?"""
+    check50.py.compile(submission)
+
 @check50.check()
 def hello_world():
-    """check for correct output"""
+    """Is the output correct?"""
     check50.run("python3 hello_world.py").stdout("Hello, world!", regex=False).exit(0)
