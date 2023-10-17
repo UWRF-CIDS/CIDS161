@@ -5,8 +5,8 @@ import numpy as np
 c = np.random.rand(10, 12, 3)
 
 expected = ips.trippy(c)
-actual = trippy(c)
+actual = cycle_colors(c)
 
 if np.array_equal(expected, actual):
-	print("trippy")
+	print("cycle_colors")
 

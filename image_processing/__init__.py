@@ -98,14 +98,14 @@ def check5():
         
 @check50.check(compiles)
 def check6():
-    """Can the program make an image trippy?"""
+    """Can the program cycle the colors of an image?"""
     
     check50.py.append_code(submission, test_trippy)
     
     output = check50.run(f"{python_command} {submission}").stdout()
     
-    if output.strip() != "trippy":
-        raise check50.Failure("Making an image trippy did not seem to work...", help="")
+    if output.strip() != "cycle_colors":
+        raise check50.Failure("Cycling the colors of an image did not seem to work...", help="")
                 
                 
         
