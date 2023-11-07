@@ -1,0 +1,9 @@
+check50: 
+  files: &check50_files
+    - !exclude "*"
+    - !include isPalindrome_function.py
+    - !include isPalindrome_function_driver.py
+    - !include isPalindrome_function_solution.pyc
+
+submit50:
+  files: *check50_files
