@@ -1,0 +1,9 @@
+check50: 
+  files: &check50_files
+    - !exclude "*"
+    - !include conversion_functions.py
+    - !include conversion_functions_driver.py
+    - !include conversion_functions_solution.pyc
+
+submit50:
+  files: *check50_files
