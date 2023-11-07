@@ -8,20 +8,6 @@ driver_file = "conversion_functions_driver.py"
 solution_file = "conversion_functions_solution.pyc"
 
 
-# solution functions
-def feetToFurlongs(feet):
-    furlongs = feet/660
-    return furlongs
-
-def poundsToFirkins(pounds):
-    firkins = pounds/90
-    return firkins
-
-def daysToFortnights(days):
-    fortnights = days/14
-    return fortnights
-
-
 @check50.check()
 def exists():
     """Does the solution .py exist?"""
