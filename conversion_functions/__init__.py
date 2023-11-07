@@ -26,6 +26,7 @@ def daysToFortnights(days):
 def exists():
     """Does the solution .py exist?"""
     check50.exists(submitted_file)
+    check50.include(driver_file)
     check50.include(solution_file)
     
 @check50.check(exists)
