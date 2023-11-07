@@ -1,0 +1,9 @@
+check50: 
+  files: &check50_files
+    - !exclude "*"
+    - !include printStairs_function.py
+    - !include printStairs_function_driver.py
+    - !include printStairs_function_solution.pyc
+
+submit50:
+  files: *check50_files
